@@ -47,29 +47,285 @@ table {
 }
 /*end css reset*/
 
-body {
-    background-color: black;
+html {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+body {
+    background-color: white;
+    width: 100%;
+    min-width: 480px;
+    margin: auto;
+}
 h1 {
-    font-size: 3em;
     background-color: white;
     color: #007d7b;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    top: 20px;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
 }
 nav {
     background-color: black;
-    color:white;
-}
-#content {
-    background-color: white;   
-}
-figure {
-    padding: 5px;
-    margin: auto;
-}
-figcaption {
     text-align: center;
 }
-figcaption:nth-child(odd) {
-
+nav ul {
+    display: inline-flex;
+    height: 105px;
 }
+nav a {
+    color: white;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+[href="#top"] {
+    color: white;
+    background-color: rgba(0,0,0,.35);
+    border: 2px solid gray;
+    padding: 10px;
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    border-radius:10px 0 0px 0px;
+}
+main {
+    background-color: black;
+}
+#about, #gallery {
+    background-color: white;
+    color: black;
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+}
+h2 {
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+p {
+    font-size: 1.25em;
+    margin: 10px;
+}
+#gallery {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr;
+    margin: auto;
+    text-align: center;
+}
+figure {
+  position: relative;
+  width: 95%;
+  margin: auto;
+  padding: 10px 0;
+}
+figcaption {
+    text-transform: uppercase;
+}
+#chile {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  color: #ffffff;
+}
+#guatemala {
+  position: absolute;
+  top: 25px;
+  width: 100%;
+  color: #ffffff;
+}
+#hawaii {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  color: #ffffff;
+}
+#iran {
+  position: absolute;
+  top: 25px;
+  width: 100%;
+  color: #000000;
+}
+#ireland {
+  position: absolute;
+  top: 25px;
+  width: 100%;
+  color: #000000;
+}
+#italy {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  color: #000000;
+}
+#moab {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  color: #ffffff;
+}
+#rocky {
+  position: absolute;
+  top: 25px;
+  width: 100%;
+  color: #000000;
+}
+#switzerland {
+  position: absolute;
+  top: 25px;
+  width: 100%;
+  color: #000000;
+}
+#uk {
+  position: absolute;
+  top: 25px;
+  width: 100%;
+  color: #000000;
+}
+#usa {
+  position: absolute;
+  top: 25px;
+  width: 100%;
+  color: #000000;
+}
+#wyoming {
+  position: absolute;
+  top: 25px;
+  width: 100%;
+  color: #ffffff;
+}
+form {
+  padding-top: 20px;
+  margin: auto;
+}
+form h2, form p {
+  color: #ffffff;
+  text-align: center;
+}
+#contact {
+   width: 70%;
+   margin: auto;
+}
+label {
+  color: #ffffff;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin: 10px;
+}
+.row {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 25px;
+  padding: 10px;
+}
+input {
+  display: block;
+  width: 80%;
+  height: 20px;
+}
+::placeholder {
+  color: #007d7b;
+  font-weight: bold;
+  padding-left: 5px; 
+}
+.button {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+#submit {
+  background-color: #007d7b;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-size: 2em;
+  border: none;
+  border-radius: 20px;
+  width: 50%;
+  height: 35px;
+  padding: 10px;
+  margin: 25px;
+  text-align: center;
+}
+
+small {
+  text-size: 1em;
+}
+footer{
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+  
+/*---------------------------------------------*/
+/* MEDIA QUERY FOR 880PX */
+@media screen and (min-width: 880px) {
+  h1{
+    text-align: left;
+    padding-left: 10px;
+    font-weight: bold;
+}
+  nav {
+    height: 100px;
+    text-align: center;
+  }
+  nav ul {   
+   display: inline-flex;
+    height: 105px;
+}
+nav li {
+    list-style: none;
+    text-decoration: none;
+    height: 55px;
+    position: relative;
+    top: 35px;
+    margin: 10px;
+}
+  img {
+    width: 100%; 
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 6 (1fr);
+    gap: 10px;
+    margin: auto;
+    justify-content: center;
+}
+  form {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+/* MEDIA QUERY FOR 1300PX */
+@media screen and (min-width: 1300px) {
+ nav {
+    height: 100px;
+    text-align: right;
+  }
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 4 (1fr);
+    gap: 10px;
+    margin: auto;
+    justify-content: center;
+}
+  }
+  img {
+    width: 100%;
+  }
+.gallery {}
+  form{
+    width: 80%;
+    margin: auto;
+  }

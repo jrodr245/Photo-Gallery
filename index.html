@@ -19,76 +19,86 @@
         </nav>
     </header>
     <main>
-        <section id="#content">
-            <section id="#about">
-                <h2>About</h2>
-                <p>Hello!</p>
-                <p>I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world.</p>
-            </section>
-            <section id="gallery">
-                <h2>Gallery</h2>
-                <p>Here are some highlights of my work. The locations and year are in the caption.</p> 
+        <section id="#about">
+            <h2>About</h2>
+            <p>Hello!</p>
+            <p>I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world.</p>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <p>Here are some highlights of my work. The locations and year are in the caption.</p>
+            <div class="gallery"> 
                 <figure>
                     <img src="images/Chile.png" alt="Sunset at a beach.">
-                    <figcaption>Chile, 2001</figcaption>
+                    <figcaption id="chile">Chile, 2001</figcaption>
                 </figure>
                 <figure>
                     <img src="images/Guatemala.png" alt="Purple sky with purple flowers.">
-                    <figcaption>Guatemala, 1997</figcaption>
+                    <figcaption id="guatemala">Guatemala, 1997</figcaption>
                 </figure>
                 <figure>
                     <img src="images/Hawaii.png" alt="Hawaiian island.">
-                    <figcaption>Hawaii, 2010</figcaption>
+                    <figcaption id="hawaii">Hawaii, 2010</figcaption>
                 </figure>
                 <figure>    
                     <img src="images/Iran.png" alt="Vegetation in desert">
-                    <figcaption>Iran, 1999</figcaption>
+                    <figcaption id="iran">Iran, 1999</figcaption>
                 </figure>
                 <figure>
                     <img src="images/Ireland.png" alt="Lush green hills and trees.">
-                    <figcaption>Ireland, 2012</figcaption>
+                    <figcaption id="ireland">Ireland, 2012</figcaption>
                 </figure> 
                 <figure>   
                     <img src="images/Italy.png" alt="Snowy mountainside and river.">
-                    <figcaption>Italy, 2015</figcaption>
+                    <figcaption id="italy">Italy, 2015</figcaption>
                 </figure>
                 <figure>     
                     <img src="images/Moab-Desert.png" alt="Cliffy desert sunset">
-                    <figcaption>Moab Desert, 2020</figcaption>
+                    <figcaption id="moab">Moab Desert, 2020</figcaption>
                 </figure>
                 <figure>
                     <img src="images/Rocky-Mountains.png" alt="Tall mountain view">
-                    <figcaption>Rocky Mountains, 2009</figcaption>
+                    <figcaption id="rocky">Rocky Mountains, 2009</figcaption>
                 </figure>
                 <figure>        
                     <img src="images/Switzerland.png" alt="Snow mountain view with trees">
-                    <figcaption>Switzerland, 2014</figcaption>
+                    <figcaption id="switzerland">Switzerland, 2014</figcaption>
                 </figure>
                 <figure>        
                     <img src="images/UK.png" alt="Wide view of hilly field.">
-                    <figcaption>UK, 2005</figcaption>
+                    <figcaption id="uk">UK, 2005</figcaption>
                 </figure>
                 <figure>        
                     <img src="images/USA.png" alt="Wide view of flowery field.">
-                    <figcaption>USA, 2021</figcaption>
+                    <figcaption id="usa">USA, 2021</figcaption>
                 </figure>
                 <figure>       
                     <img src="images/Wyoming.png" alt="Wide view of trees and river.">
-                    <figcaption>Wyoming, 2021</figcaption>
+                    <figcaption id="wyoming">Wyoming, 2021</figcaption>
                 </figure>
-            </section>
-        </section>    
+            </div>    
+        </section> 
         <section id="#contact">
-            <h2>Contact</h2>
-            <p>Please fill out this form and I’ll connect with you soon.</p>
-            <!--form?
-            Your contact information
-            Name (Your full name)
-            Email (Enter your email address)
-            Message (What can I help you with?)
-            <button>Submit<button>
-            -->
-        </section>
+            <form>
+                <h2>Contact</h2>
+                <p>Please fill out this form and I’ll connect with you soon.</p>
+                <p>Your contact information</p>
+                <div class="row">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Full Name">
+                </div>
+                <div class="row">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter Your Email Address">
+                </div>
+                <div class="row">
+                    <label for="message">Message</label>
+                    <input type="text" id="message" placeholder="What can I help you with?">
+                </div>
+                <div class="button">
+                    <input type="submit" value="submit" id="submit">
+                </div>
+        </section>    
     </main>
     <footer>
         Copyright 2021 TK Photography
